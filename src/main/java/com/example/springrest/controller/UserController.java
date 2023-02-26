@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("user")
 public class UserController {
 
-    @GetMapping("/get")
+    @GetMapping("/get{user}")
     public ResponseEntity<String> getUser(@PathVariable String user){
         return ResponseEntity.ok(user);
     }
